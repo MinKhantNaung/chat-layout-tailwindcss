@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-chat",
+  "version": "1.0.0",
+  "description": "tailwind chat",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/app.css -o ./dist/css/app.css --watch",
+    "build": "npx tailwindcss -i ./src/css/app.css -o ./dist/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaza-putu/tailwindcss-messenger-clone.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yaza-putu/tailwindcss-messenger-clone/issues"
+  },
+  "homepage": "https://github.com/yaza-putu/tailwindcss-messenger-clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
