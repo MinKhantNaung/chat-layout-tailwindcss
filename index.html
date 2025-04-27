@@ -9,7 +9,7 @@
   <body>
     <!-- Community -->
     <div
-      class="h-screen w-full flex antialiased text-gray-200 bg-gray-900 overflow-hidden"
+      class="h-screen w-full flex antialiased text-gray-200 bg-gradient-to-r from-[#9926f0] to-[#d122e3] overflow-hidden"
     >
       <div class="flex-1 flex flex-col">
         <div class="border-b-2 border-gray-800 p-2 flex flex-row z-20">
@@ -18,6 +18,7 @@
           <div class="bg-green-500 w-3 h-3 rounded-full mr-2"></div>
         </div>
         <main class="grow flex flex-row min-h-0">
+          <!-- Left Side Bar / Categories and Topics -->
           <section
             class="flex flex-col flex-none overflow-auto w-24 group lg:max-w-sm md:w-2/5 transition-all duration-300 ease-in-out"
           >
@@ -45,6 +46,7 @@
                 </svg>
               </a>
             </div>
+            <!-- Search Box -->
             <div class="search-box p-4 flex-none">
               <form onsubmit="">
                 <div class="relative">
@@ -67,6 +69,7 @@
                 </div>
               </form>
             </div>
+            <!-- Categories -->
             <div
               class="active-users flex flex-row p-2 overflow-auto w-0 min-w-full"
             >
@@ -176,24 +179,27 @@
                 <p>Recommendations</p>
               </div>
             </div>
+            <!-- Topics -->
             <div class="contacts p-2 flex-1 overflow-y-scroll">
               <div
                 class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/61.jpg"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
                     alt=""
                   />
                 </div>
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p>Angelina Jolie</p>
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">
+                      <p class="text-gray-400 truncate">
                         Ok, see you at the subway in a bit.
                       </p>
                     </div>
@@ -206,8 +212,8 @@
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/97.jpg"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
                     alt=""
                   />
                   <div
@@ -219,10 +225,12 @@
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p class="font-bold">Tony Stark</p>
-                  <div class="flex items-center text-sm font-bold">
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
+                  <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">Hey, Are you there?</p>
+                      <p class="text-gray-400 truncate">Hey, Are you there?</p>
                     </div>
                     <p class="ml-2 whitespace-no-wrap">10min</p>
                   </div>
@@ -232,24 +240,28 @@
                 ></div>
               </div>
               <div
-                class="flex justify-between items-center p-3 bg-gray-800 rounded-lg relative"
+                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/33.jpg"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
                     alt=""
                   />
                 </div>
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p>Scarlett Johansson</p>
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">You sent a photo.</p>
+                      <p class="text-gray-400 truncate">
+                        Ok, see you at the subway in a bit.
+                      </p>
                     </div>
-                    <p class="ml-2 whitespace-no-wrap">1h</p>
+                    <p class="ml-2 whitespace-no-wrap">Just now</p>
                   </div>
                 </div>
               </div>
@@ -258,80 +270,24 @@
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/12.jpg"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
                     alt=""
                   />
                 </div>
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p>John Snow</p>
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">You missed a call John.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">4h</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/23.jpg"
-                    alt="User2"
-                  />
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Emma Watson</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">You sent a video.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">11 Feb</p>
-                  </div>
-                </div>
-                <div
-                  class="w-4 h-4 flex shrink-0 hidden md:block group-hover:block"
-                >
-                  <img
-                    class="rounded-full w-full h-full object-cover"
-                    alt="user2"
-                    src="https://randomuser.me/api/portraits/women/23.jpg"
-                  />
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/women/87.jpg"
-                    alt="User2"
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Sunny Leone</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">
-                        Ah, it was an awesome one night stand.
+                      <p class="text-gray-400 truncate">
+                        Ok, see you at the subway in a bit.
                       </p>
                     </div>
-                    <p class="ml-2 whitespace-no-wrap">1 Feb</p>
+                    <p class="ml-2 whitespace-no-wrap">Just now</p>
                   </div>
                 </div>
               </div>
@@ -340,63 +296,24 @@
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/45.jpg"
-                    alt="User2"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
+                    alt=""
                   />
                 </div>
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p>Bruce Lee</p>
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">You are a great human being.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">23 Jan</p>
-                  </div>
-                </div>
-                <div
-                  class="w-4 h-4 flex shrink-0 hidden md:block group-hover:block"
-                >
-                  <img
-                    class="rounded-full w-full h-full object-cover"
-                    alt="user2"
-                    src="https://randomuser.me/api/portraits/men/45.jpg"
-                  />
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-10 h-10 object-cover absolute ml-6"
-                    src="https://randomuser.me/api/portraits/men/22.jpg"
-                    alt="User2"
-                  />
-                  <img
-                    class="shadow-md rounded-full w-10 h-10 object-cover absolute mt-6"
-                    src="https://randomuser.me/api/portraits/men/55.jpg"
-                    alt="User2"
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>TailwindCSS Group</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">
-                        Adam: Hurray, Version 2 is out now!!.
+                      <p class="text-gray-400 truncate">
+                        Ok, see you at the subway in a bit.
                       </p>
                     </div>
-                    <p class="ml-2 whitespace-no-wrap">23 Jan</p>
+                    <p class="ml-2 whitespace-no-wrap">Just now</p>
                   </div>
                 </div>
               </div>
@@ -405,151 +322,24 @@
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/34.jpg"
-                    alt="User2"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
+                    alt=""
                   />
                 </div>
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p>Will Smith</p>
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">WTF dude!! absofuckingloutely.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">13 Dec</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/22.jpg"
-                    alt="User2"
-                  />
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Brad Pitt</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">you called Brad.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">31 Dec</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/99.jpg"
-                    alt="User2"
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Tom Hanks</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">Tom called you.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">31 Dec</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/41.jpg"
-                    alt="User2"
-                  />
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Dwayne Johnson</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">How can i forget about that man!.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">12 Nov</p>
-                  </div>
-                </div>
-                <div
-                  class="w-4 h-4 flex shrink-0 hidden md:block group-hover:block"
-                >
-                  <img
-                    class="rounded-full w-full h-full object-cover"
-                    alt="user2"
-                    src="https://randomuser.me/api/portraits/men/41.jpg"
-                  />
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/70.jpg"
-                    alt="User2"
-                  />
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Johnny Depp</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">Alright! let's catchup tomorrow!.</p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">4 Nov</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div class="w-16 h-16 relative flex shrink-0">
-                  <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/20.jpg"
-                    alt="User2"
-                  />
-                  <div
-                    class="absolute bg-gray-900 p-1 rounded-full bottom-0 right-0"
-                  >
-                    <div class="bg-green-500 rounded-full w-3 h-3"></div>
-                  </div>
-                </div>
-                <div
-                  class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
-                >
-                  <p>Leonardo Dicaprio</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="truncate">
-                        How can you leave Rose dude. I hate you!
+                      <p class="text-gray-400 truncate">
+                        Ok, see you at the subway in a bit.
                       </p>
                     </div>
-                    <p class="ml-2 whitespace-no-wrap">26 Oct</p>
+                    <p class="ml-2 whitespace-no-wrap">Just now</p>
                   </div>
                 </div>
               </div>
@@ -558,34 +348,31 @@
               >
                 <div class="w-16 h-16 relative flex shrink-0">
                   <img
-                    class="shadow-md rounded-full w-full h-full object-cover"
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                    alt="User2"
+                    class="shadow-md w-full h-full object-cover"
+                    src="./images/bubble-chat.png"
+                    alt=""
                   />
                 </div>
                 <div
                   class="flex-auto min-w-0 ml-4 mr-6 hidden md:block group-hover:block"
                 >
-                  <p>Tom Cruise</p>
+                  <p class="text-xl">
+                    Awareness Implementation in Custom Context
+                  </p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
-                      <p class="truncate">Happy birthday to you my friend!</p>
+                      <p class="text-gray-400 truncate">
+                        Ok, see you at the subway in a bit.
+                      </p>
                     </div>
-                    <p class="ml-2 whitespace-no-wrap">2 Oct</p>
+                    <p class="ml-2 whitespace-no-wrap">Just now</p>
                   </div>
-                </div>
-                <div
-                  class="w-4 h-4 flex shrink-0 hidden md:block group-hover:block"
-                >
-                  <img
-                    class="rounded-full w-full h-full object-cover"
-                    alt="user2"
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                  />
                 </div>
               </div>
             </div>
           </section>
+          <!-- Left Side Bar / Categories and Topics Section End -->
+           
           <section class="flex flex-col flex-auto border-l border-gray-800">
             <div
               class="chat-header px-6 py-4 flex flex-row flex-none justify-between items-center shadow-sm"
