@@ -20,7 +20,7 @@
         <main class="grow flex flex-row min-h-0">
           <!-- Left Side Bar / Categories and Topics -->
           <section
-            class="hidden md:flex flex-col flex-none overflow-auto w-24 group lg:max-w-sm md:w-2/5 transition-all duration-300 ease-in-out"
+            class="flex flex-col flex-none overflow-auto group lg:max-w-sm md:w-2/5 transition-all duration-300 ease-in-out"
           >
             <div
               class="header md:p-2 lg:p-4 flex flex-row gap-2 items-center flex-none"
@@ -61,11 +61,11 @@
             </div>
             <!-- Categories -->
             <div
-              class="active-users flex flex-row p-2 overflow-auto w-0 min-w-full"
+              class="active-users flex flex-row items-center p-2 overflow-auto w-0 min-w-full"
             >
-              <div class="text-sm text-center mr-4">
+              <div class="text-sm flex flex-col items-center mr-4">
                 <button
-                  class="flex shrink-0 focus:outline-hidden bg-gray-800 text-gray-600 rounded-full lg:w-16 lg:h-16 md:w-10 md:h-10"
+                  class="flex shrink-0 focus:outline-hidden bg-gray-800 text-gray-600 rounded-full w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10"
                   type="button"
                 >
                   <svg class="w-full h-full fill-current" viewBox="0 0 24 24">
@@ -76,10 +76,10 @@
                 </button>
                 <p>New Topic</p>
               </div>
-              <div class="text-sm text-center mr-4">
+              <div class="text-sm flex flex-col items-center mr-4">
                 <div class="p-1 border-4 border-transparent rounded-full">
                   <div
-                    class="lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
+                    class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
                   >
                     <img
                       class="shadow-md rounded-full w-full h-full object-cover"
@@ -90,10 +90,10 @@
                 </div>
                 <p>General Discussion</p>
               </div>
-              <div class="text-sm text-center mr-4">
+              <div class="text-sm flex flex-col items-center mr-4">
                 <div class="p-1 border-4 border-transparent rounded-full">
                   <div
-                    class="lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
+                    class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
                   >
                     <img
                       class="shadow-md rounded-full w-full h-full object-cover"
@@ -104,10 +104,10 @@
                 </div>
                 <p>Anime Talk</p>
               </div>
-              <div class="text-sm text-center mr-4">
+              <div class="text-sm flex flex-col items-center mr-4">
                 <div class="p-1 border-4 border-transparent rounded-full">
                   <div
-                    class="lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
+                    class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
                   >
                     <img
                       class="shadow-md rounded-full w-full h-full object-cover"
@@ -118,10 +118,10 @@
                 </div>
                 <p>Manga Corner</p>
               </div>
-              <div class="text-sm text-center mr-4">
+              <div class="text-sm flex flex-col items-center mr-4">
                 <div class="p-1 border-4 border-transparent rounded-full">
                   <div
-                    class="lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
+                    class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
                   >
                     <img
                       class="shadow-md rounded-full w-full h-full object-cover"
@@ -132,10 +132,10 @@
                 </div>
                 <p>News & Announcements</p>
               </div>
-              <div class="text-sm text-center mr-4">
+              <div class="text-sm flex flex-col items-center mr-4">
                 <div class="p-1 border-4 border-transparent rounded-full">
                   <div
-                    class="lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
+                    class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
                   >
                     <img
                       class="shadow-md rounded-full w-full h-full object-cover"
@@ -356,7 +356,9 @@
           <!-- Left Side Bar / Categories and Topics Section End -->
 
           <!-- Chat Section -->
-          <section class="flex flex-col flex-auto border-l border-gray-800">
+          <section
+            class="hidden md:flex flex-col flex-auto border-l border-gray-800"
+          >
             <!-- Topic Chat Header -->
             <div
               class="chat-header px-6 py-4 flex flex-row flex-none justify-between shadow-sm"
