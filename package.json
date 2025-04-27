@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "tailwind chat",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/css/app.css -o ./dist/css/app.css --watch",
-    "build": "npx tailwindcss -i ./src/css/app.css -o ./dist/css/app.css"
+    "dev": "npx @tailwindcss/cli -i ./src/css/app.css -o ./dist/css/app.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/css/app.css -o ./dist/css/app.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/yaza-putu/tailwindcss-messenger-clone#readme",
   "devDependencies": {
-    "tailwindcss": "^3.1.6"
+    "tailwindcss": "^4.1.4"
   }
 }
