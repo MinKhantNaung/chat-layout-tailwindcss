@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-500: oklch(72.3% 0.219 149.579);
@@ -216,6 +217,18 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .ms-1 {
+    margin-inline-start: calc(var(--spacing) * 1);
+  }
+  .ms-1\.5 {
+    margin-inline-start: calc(var(--spacing) * 1.5);
+  }
+  .me-1 {
+    margin-inline-end: calc(var(--spacing) * 1);
+  }
+  .me-1\.5 {
+    margin-inline-end: calc(var(--spacing) * 1.5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -312,6 +325,12 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
@@ -341,6 +360,15 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
+  .w-\[80\%\] {
+    width: 80%;
   }
   .w-full {
     width: 100%;
@@ -401,6 +429,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -502,6 +533,9 @@
   }
   .bg-green-500 {
     background-color: var(--color-green-500);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
@@ -753,6 +787,11 @@
       outline-style: none;
     }
   }
+  .md\:ms-0 {
+    @media (width >= 48rem) {
+      margin-inline-start: calc(var(--spacing) * 0);
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -763,6 +802,11 @@
       display: flex;
     }
   }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
   .md\:h-8 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 8);
@@ -771,6 +815,11 @@
   .md\:h-10 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:h-16 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 16);
     }
   }
   .md\:w-1\/5 {
@@ -796,6 +845,16 @@
   .md\:w-16 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:overflow-hidden {
+    @media (width >= 48rem) {
+      overflow: hidden;
+    }
+  }
+  .md\:p-0 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 0);
     }
   }
   .md\:p-2 {
