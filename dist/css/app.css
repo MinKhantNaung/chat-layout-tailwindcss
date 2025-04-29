@@ -194,6 +194,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -459,6 +462,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
   }
   .overflow-y-scroll {
     overflow-y: scroll;
@@ -831,6 +837,11 @@
   .md\:w-16 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
     }
   }
   .md\:p-2 {
