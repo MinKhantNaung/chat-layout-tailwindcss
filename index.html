@@ -41,7 +41,7 @@
                   src="./images/otaku_anime.png"
                 />
               </div>
-              <!-- From Mobile Search Box -->
+              <!-- Mobile Search Box -->
               <div
                 class="search-box md:hidden md:p-4 lg:p-2 flex-none flex-grow"
               >
@@ -72,7 +72,7 @@
                 Community Discussion
               </p>
             </div>
-            <!-- From Medium size Search Box -->
+            <!-- Laptop size Search Box -->
             <div class="search-box hidden md:block md:p-4 lg:p-2 flex-none">
               <form onsubmit="">
                 <div class="relative">
@@ -95,23 +95,11 @@
                 </div>
               </form>
             </div>
-            <!-- Categories -->
+
+            <!-- Mobile Size Topics -->
             <div
-              class="active-users flex flex-row items-center p-2 overflow-auto w-0 min-w-full"
+              class="active-users flex flex-row items-center justify-between p-2 overflow-auto w-0 min-w-full"
             >
-              <div class="text-sm flex flex-col items-center mr-4">
-                <button
-                  class="flex shrink-0 focus:outline-hidden bg-gray-800 text-gray-600 rounded-full w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10"
-                  type="button"
-                >
-                  <svg class="w-full h-full fill-current" viewBox="0 0 24 24">
-                    <path
-                      d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"
-                    />
-                  </svg>
-                </button>
-                <p>New Topic</p>
-              </div>
               <div class="text-sm flex flex-col items-center mr-4">
                 <div class="p-1 border-4 border-transparent rounded-full">
                   <div
@@ -183,8 +171,9 @@
                 <p>Recommendations</p>
               </div>
             </div>
-            <!-- Topics -->
-            <div class="contacts p-2 flex-1 overflow-y-scroll">
+
+            <!-- Laptop Topics -->
+            <div class="contacts p-2 flex-1 overflow-y-scroll hidden md:block">
               <div
                 class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
               >
@@ -193,14 +182,12 @@
                 >
                   <img
                     class="shadow-md rounded-full w-full h-full object-cover"
-                    src="./images/news-reporter-svgrepo-com.svg"
+                    src="./images/discuss-svgrepo-com.svg"
                     alt=""
                   />
                 </div>
                 <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
+                  <p class="text-xl wrap-anywhere">General Discussion</p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
                       <p class="text-gray-400 truncate">
@@ -219,7 +206,7 @@
                 >
                   <img
                     class="shadow-md w-full h-full object-cover"
-                    src="./images/news-reporter-svgrepo-com.svg"
+                    src="./images/otaku.png"
                     alt=""
                   />
                   <div
@@ -229,9 +216,7 @@
                   </div>
                 </div>
                 <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
+                  <p class="text-xl wrap-anywhere">Anime Talk</p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
                       <p class="text-gray-400 truncate">Hey, Are you there?</p>
@@ -248,14 +233,12 @@
                 >
                   <img
                     class="shadow-md w-full h-full object-cover"
-                    src="./images/news-reporter-svgrepo-com.svg"
+                    src="./images/doraemon-svgrepo-com.svg"
                     alt=""
                   />
                 </div>
                 <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
+                  <p class="text-xl wrap-anywhere">Manga Corner</p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
                       <p class="text-gray-400 truncate">
@@ -279,9 +262,7 @@
                   />
                 </div>
                 <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
+                  <p class="text-xl wrap-anywhere">News & Announcements</p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
                       <p class="text-gray-400 truncate">
@@ -300,66 +281,12 @@
                 >
                   <img
                     class="shadow-md w-full h-full object-cover"
-                    src="./images/news-reporter-svgrepo-com.svg"
+                    src="./images/heart.svg"
                     alt=""
                   />
                 </div>
                 <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="text-gray-400 truncate">
-                        Ok, see you at the subway in a bit.
-                      </p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">Just now</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div
-                  class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
-                >
-                  <img
-                    class="shadow-md w-full h-full object-cover"
-                    src="./images/news-reporter-svgrepo-com.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <div class="min-w-0">
-                      <p class="text-gray-400 truncate">
-                        Ok, see you at the subway in a bit.
-                      </p>
-                    </div>
-                    <p class="ml-2 whitespace-no-wrap">Just now</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-between items-center p-3 hover:bg-gray-800 rounded-lg relative"
-              >
-                <div
-                  class="w-8 h-8 lg:w-16 lg:h-16 md:w-10 md:h-10 relative flex shrink-0"
-                >
-                  <img
-                    class="shadow-md w-full h-full object-cover"
-                    src="./images/news-reporter-svgrepo-com.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-auto min-w-0 ml-4 mr-6">
-                  <p class="text-xl wrap-anywhere">
-                    Awareness Implementation in Custom Context
-                  </p>
+                  <p class="text-xl wrap-anywhere">Recommendations</p>
                   <div class="flex items-center text-sm text-gray-600">
                     <div class="min-w-0">
                       <p class="text-gray-400 truncate">
