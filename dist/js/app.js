@@ -66,3 +66,9 @@ function loadingMessage(active) {
         document.querySelector(".loading-message").remove()
     }
 }
+
+function toggleMobileTopics() {
+    const topics = document.getElementById("mobileTopics");
+    topics.classList.toggle("hidden");
+    topics.classList.toggle("flex");
+ }
